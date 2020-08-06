@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   function getWeather(cityName, stateCode, countryCode) {
     axios
-      .get(
+      .post(
         `http://api.openweathermap.org/data/2.5/weather?q=${cityName},${stateCode},${countryCode}&appid=cebcf683d0d062863ca7097ff13e3981&units=metric`
       )
       .then((response) => {
