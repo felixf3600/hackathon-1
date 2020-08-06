@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="./JS/main.js"></script>
+    <title>hackathon-week5</title>
+  </head>
+  <body>
+    <div class="background__container">
+      <section class="time"></section>
+      <section class="jokes"></section>
+      <section class="inspiration"></section>
+      <section class="weather">
+        <form action="" class="weather__form">
+          <label for="city">CITY</label>
+          <input type="text" name="city" placeholder="Enter City" />
+          <label for="province">PROVINCE</label>
+          <input type="text" name="province" placeholder="Enter Province" />
+          <label for="country">COUNTRY</label>
+          <input type="text" name="country" placeholder="Enter Country" />
+          <button type="submit" name="button">ENTER</button>
+        </form>
+      </section>
+      <section class="news">
+        <form action="" class="news__form">
+          <label for="newsCategory">Select a category:</label>
+          <select name="newsCategory" id="news">
+            <option value="home">Home</option>
+            <option value="arts">Arts</option>
+            <option value="automobiles">Automobiles</option>
+            <option value="books">Books</option>
+            <option value="business">Business</option>
+            <option value="fashion">Fashion</option>
+            <option value="food">Food</option>
+            <option value="health">Health</option>
+            <option value="insider">Insider</option>
+            <option value="magazine">Magazine</option>
+            <option value="movies">Movies</option>
+            <option value="nyregion">NY region</option>
+            <option value="obituaries">obituaries</option>
+            <option value="opinion">Opinion</option>
+            <option value="politics">Politics</option>
+            <option value="realestate">Real State</option>
+            <option value="science">Science</option>
+            <option value="sports">Sports</option>
+            <option value="sundayreview">Sunday Review</option>
+            <option value="technology">Technology</option>
+            <option value="theater">Theater</option>
+            <option value="t-magazine">Time Magazine</option>
+            <option value="travel">Travel</option>
+            <option value="upshot">Upshot</option>
+            <option value="us">USA</option>
+            <option value="worldt">World</option>
+          </select>
+        </form>
+        <div class="container-carousel">
+          <div class="main-carousel" id="featured"></div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
